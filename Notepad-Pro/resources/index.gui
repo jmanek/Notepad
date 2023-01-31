@@ -1,0 +1,61 @@
+<svg>
+
+      <rect width="100%" height="100%" fill="black"/>
+  
+    <line class="strokeGuides strokeGuidesLeft" x1="0" y1="100%" x2="100%" y2="0" fill="white" opacity="0.3" stroke-width="1"   />  
+    <line class="strokeGuides strokeGuidesLeft" x1="0" y1="80%" x2="80%" y2="0" fill="white" opacity="0.2" stroke-width="1"   />  
+    <line class="strokeGuides strokeGuidesLeft" x1="20%" y1="100%" x2="100%" y2="20%" fill="white" opacity="0.2" stroke-width="1"   />  
+  
+    <line class="strokeGuides strokeGuidesRight" x1="0" y1="0" x2="100%" y2="100%" fill="white" opacity="0.3" stroke-width="1"   />  
+    <line class="strokeGuides strokeGuidesRight" x1="20%" y1="0" x2="100%" y2="80%" fill="white" opacity="0.2" stroke-width="1"   />  
+    <line class="strokeGuides strokeGuidesRight" x1="0" y1="20%" x2="80%" y2="100%" fill="white" opacity="0.2" stroke-width="1"   />  
+  
+    <link rel="import" href="lines.gui" />
+    <rect id="canvas" width="100%" height="100%"
+        pointer-events="visible" opacity="0"/> 
+ <use id="viewerCanvas" href="#push-button"  width="100%" height="100%" 
+      pointer-events="visible" display="none" opacity="0"> 
+  </use>
+  <use id="viewerButton" href="#push-button"  width="50" height="50" > 
+     <g transform="translate(10,10)">
+       
+        <image class="iconImg" id="openViewer" x="0" y="0" height="28" href="folder-white.png" />
+        <image class="iconImg" id="openCanvas" x="0" y="0"  href="edit-2.png" display="none"/>
+        <image class="iconImg" id="saveCanvas" x="0" y="0"  height="21" href="check-white.png" display="none"/>
+        </g>
+    
+  </use>
+      <use id="deletePointsButton" href="#push-button"  x="100%-50" y="100%-50" width="50" height="50" >
+     <g transform="translate(10,10)">
+        <image class="iconImg" id="autoClear"   y="0" href="clock-white.png" />
+          
+        <image class="iconImg" id="deleteSaved"   height="33" href="trash-white.png" display="none"/>
+        <image class="iconImg" id="clearCanvas"  y="0" height="27" width="27" href="x-white.png" display="none"/>
+        <image class="iconImg" id="manualClear"   height="36" href="clipboard-white.png" display="none" />
+        </g>
+
+  </use>
+  <text id="savedLinesCount" display="none" x="100%-50" y="100%-5"
+        font-family="System-Regular" fill="white"
+        font-size="20" font-weight="bold" text-length="20"
+        text-anchor="end">0/0</text>
+  
+<!--   <rect id="trialStatus"  width="100%" height="100%" display="none" > -->
+     <g  id="trialStatus"  transform="translate(50%,40%)" display="none">
+    
+    <text y="0"
+        font-family="System-Regular" fill="white"
+        font-size="24" font-weight="bold" text-length="100" text-anchor="middle">Your trial has expired,</text>
+    <text   y="21"
+        font-family="System-Regular" fill="white"
+        font-size="24" font-weight="bold" text-length="100" text-anchor="middle">please open the app settings</text>
+      <text   y="42"
+        font-family="System-Regular" fill="white"
+        font-size="24" font-weight="bold" text-length="100" text-anchor="middle">on your phone to unlock</text>
+    <text   y="63"
+        font-family="System-Regular" fill="white"
+        font-size="24" font-weight="bold" text-length="100" text-anchor="middle">Notepad Pro</text>
+    </g>
+<!--        </rect> -->
+    
+</svg>

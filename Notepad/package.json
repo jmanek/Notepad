@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~5.0.0"
+  },
+  "fitbit": {
+    "appUUID": "56dad476-bc6f-4d27-8d4a-911bd57195ac",
+    "appType": "app",
+    "appDisplayName": "Notepad",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#607d8b",
+    "requestedPermissions": [
+      "access_internet",
+      "run_background"
+    ],
+    "buildTargets": [
+      "vulcan",
+      "atlas"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "Notepad"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}

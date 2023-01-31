@@ -1,0 +1,27 @@
+{
+  "fitbit": {
+    "appUUID": "b4757f33-e078-4948-bded-5c8ceca31f6a",
+    "appType": "app",
+    "appDisplayName": "Notepad Pro",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ff5722",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini",
+      "mira"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Notepad Pro"
+      }
+    },
+    "defaultLanguage": "en-US",
+    "appClusterID": "1123581321",
+    "developerID": "6e1da321-5ec3-4c58-9163-61375b8afe17"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~4.1.0"
+  }
+}
